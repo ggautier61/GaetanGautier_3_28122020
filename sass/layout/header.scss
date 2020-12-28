@@ -1,0 +1,23 @@
+header {
+    & .header__logo {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 5px darken($color-quaternaire, 10%);
+    z-index: 1;
+        & img {
+            transform: scale(0.5);
+        }
+    }
+    & .header__position {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: $color-quaternaire;
+        font-weight: 700;
+        margin-top: 5px;
+        & i {
+            margin-right: 20px;
+        }
+    }
+}
