@@ -1,0 +1,18 @@
+.heart {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    transform: scale(1.5);
+    // color: white;
+    // border: 1px solid;
+
+    &:active {
+        // color: $color-primary;
+        color: $color-primary;
+        // background-color: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
+        
+    }
+    &--modified {
+        color: $color-primary;
+    }
+}

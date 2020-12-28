@@ -1,15 +1,20 @@
-@import "./utils/variables.scss";
+@import "./utils/_variables.scss";
+@import "./utils/functions";
 
-@import "./base/font.scss";
+@import "./base/_font.scss";
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
+@import "./component/_btn.scss";
+@import "./component/_heart.scss";
+@import "./component/_photo.scss";
+
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
 
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
+// * {
+//     box-sizing: border-box;
+//     font-family: 'Roboto', sans-serif;
+// }
 
 
 
@@ -17,7 +22,7 @@
 
 body {
     margin: 0px;
-    
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -58,15 +63,7 @@ main {
     }
 }
 
-.btn_degrade {
-    height: 50px;
-    border-radius: 25px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    border: none;
-    background: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
-}
+
 
 .card {
     height: 70px;
@@ -76,7 +73,7 @@ main {
     margin-left: 12.5px;
     display: flex;
     align-items: center;
-    box-shadow: 0px 5px 10px darken($color-quaternaire, 10%);
+    box-shadow: 0px 5px 10px darken-color($color-quaternaire, 10%);
     &__circle {
         height: 25px;
         width: 25px;
@@ -103,7 +100,6 @@ main {
     position: relative;
     margin-bottom: 20px;
     &__img {
-        width: 100%;
         height: 70%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -139,26 +135,6 @@ main {
     }
 }
 
-.heart {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    transform: scale(1.5);
-    // color: white;
-    // border: 1px solid;
-
-    &:active {
-        color: $color-primary;
-        // background-color: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
-        
-    }
-    &--modified {
-        color: $color-primary;
-    }
-}
 
 
 
-// footer {
-//     background: $color-primary;
-// }

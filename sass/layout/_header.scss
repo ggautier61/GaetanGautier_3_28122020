@@ -2,7 +2,7 @@ header {
     & .header__logo {
     display: flex;
     justify-content: center;
-    box-shadow: 0px 5px 5px darken($color-quaternaire, 10%);
+    box-shadow: 0px 5px 5px darken-color($color-quaternaire, 10%);
     z-index: 1;
         & img {
             transform: scale(0.5);

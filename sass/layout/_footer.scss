@@ -1,7 +1,6 @@
 
 
 footer {
-    height: 200px;
     padding: 20px;
     background: darken($color-quaternaire, 70%);
     color: white;
@@ -11,7 +10,18 @@ footer {
     & .footer-logo {
         &__img {
             filter: invert(100%);
+            transform-origin: left;
             transform: scale(0.3);
+        }
+    }
+    & .footer-details {
+        display: flex;
+        flex-direction: column;
+        &__icon {
+            margin-right: 10px;
+        }
+        &__text {
+            margin-bottom: 10px;
         }
         
     }
