@@ -18,11 +18,16 @@ footer {
         display: flex;
         flex-direction: column;
         &__icon {
-            margin-right: 10px;
+            width: 13px;
         }
-        &__text {
+        &__container {
+            display: flex;
             margin-bottom: 10px;
         }
         
     }
+}
+
+.footer-text {
+    margin-left: 20px;
 }

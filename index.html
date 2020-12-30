@@ -12,12 +12,13 @@
       <div class="header__logo">
         <img src="images/logo/ohmyfood.png" alt="ohmyfood">
       </div>
-      <div class="header__position">
+      
+    </header>
+    <main class="main-index">
+      <div id="localisation">
         <div><i class="fas fa-map-marker-alt"></i></div>
         Paris, Belleville
       </div>
-    </header>
-    <main>
       <section id="explore-restaurants">
         <h1>Réservez le menu qui vous convient</h1>
         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
@@ -26,22 +27,22 @@
 
       <section id="fonct">
         <h1>Fonctionnement</h1>
-        <div class="card">
-          <i class="card__icon fas fa-mobile-alt"></i>
-          <div class="card__titre">Choisissez un restaurant</div>
-          <div class="card__circle">1
+        <div class="card-fonction">
+          <i class="card-fonction__icon fas fa-mobile-alt"></i>
+          <div class="card-fonction__titre">Choisissez un restaurant</div>
+          <div class="card-fonction__circle">1
           </div>
         </div>
-        <div class="card">
-          <i class="card__icon fas fa-mobile-alt"></i>
-          <div class="card__titre">Composez votre menu</div>
-          <div class="card__circle">2
+        <div class="card-fonction">
+          <i class="card-fonction__icon fas fa-mobile-alt"></i>
+          <div class="card-fonction__titre">Composez votre menu</div>
+          <div class="card-fonction__circle">2
           </div>
         </div>
-        <div class="card">
-          <i class="card__icon fas fa-mobile-alt"></i>
-          <div class="card__titre">Dégustez au restaurant</div>
-          <div class="card__circle">3
+        <div class="card-fonction">
+          <i class="card-fonction__icon fas fa-mobile-alt"></i>
+          <div class="card-fonction__titre">Dégustez au restaurant</div>
+          <div class="card-fonction__circle">3
           </div>
         </div>
         
@@ -56,8 +57,6 @@
               <div class="card-title"><strong>La palette du goût</strong></div>
               <div>Ménilmontant</div>
               <i class="heart far fa-heart"></i>
-              <i class="heart--modified fas fa-heart"></i>
-
             </div>
             <div class="btn--new"><strong>Nouveau</strong></div>
           </div>
@@ -71,9 +70,9 @@
             <div class="btn--new"><strong>Nouveau</strong></div>
           </div>
           <div class="card-restaurant" onclick="location.href='./menu-3.html'">
-            <img class="photo card-restaurant__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+            <img class="photo card-restaurant__img" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
             <div class="card-restaurant__details">
-              <div class="card-title"><strong>A la française</strong></div>
+              <div class="card-title"><strong>À la française</strong></div>
               <div>Cité Rouge</div>
               <i class="heart far fa-heart"></i>
             </div>
@@ -90,27 +89,26 @@
       </section>
       
     </main>
+    
     <footer>
-      
-        <div class="footer-logo"><img class="footer-logo__img" src="images/logo/ohmyfood.png" alt="ohmyfood"></div>
+      <!-- <div class="footer-logo"><img class="footer-logo__img" src="images/logo/ohmyfood.png" alt="ohmyfood"></div> -->
 
-        <div class="footer-details">
-          <div class="footer-details__text">
-            <i class="footer-details__icon fas fa-utensils"></i>
-            Proposez un restaurant
-          </div>
-          <div class="footer-details__text">
-            <i class="footer-details__icon fas fa-hands-helping"></i>
-            Devenir partenaire 
-          </div>
-          <div class="footer-details__text">
-            Mentions légales
-          </div>
-          <div class="footer-details__text">
-            Contact
-          </div>
+      <div class="footer-details">
+        <div class="footer-details__container">
+          <i class="footer-details__icon fas fa-utensils"></i>
+          <div class="footer-text">Proposez un restaurant</div>
         </div>
-       
+        <div class="footer-details__container">
+          <i class="footer-details__icon fas fa-hands-helping"></i>
+          <div class="footer-text">Devenir partenaire</div>
+        </div>
+        <div class="footer-details__container">
+          Mentions légales
+        </div>
+        <div class="footer-details__container">
+          Contact
+        </div>
+      </div>
     </footer>
       
   </body>

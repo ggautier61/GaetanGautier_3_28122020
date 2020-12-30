@@ -1,0 +1,45 @@
+.main-index {
+    & #localisation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        background-color: $color-quaternaire;
+        font-weight: 700;
+        margin-top: 5px;
+        & i {
+            margin-right: 20px;
+        }
+    }
+    & #explore-restaurants {
+        background-color: lighten($color-quaternaire, 5%);
+        height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        & h1 {
+            margin-top: 0px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    & #fonct {
+
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 440px;
+        padding-bottom: 50px;
+    }
+
+    & #restaurants {
+        background-color: lighten($color-quaternaire, 5%);
+        padding: 20px;
+        
+    }
+}
