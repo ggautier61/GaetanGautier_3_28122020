@@ -10,6 +10,7 @@
         background: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
     }
 
+    
     &--new {
         background-color: $color-tertiaire;
         color: darken($color-tertiaire, 30%);
