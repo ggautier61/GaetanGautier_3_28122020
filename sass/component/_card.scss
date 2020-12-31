@@ -101,11 +101,9 @@
     height: 70px;
     box-shadow: 0px 5px 5px $color-quaternaire;
     border-radius: 10px;
-    padding: 10px;
-    padding-right: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    // flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     margin-bottom: 20px;
     &__titre {
@@ -120,5 +118,11 @@
         display: flex;
         justify-content: space-between;
         font-size: 0.9em;
+    }
+    &__right {
+        background-color: $color-tertiaire;
+        width: 60px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }

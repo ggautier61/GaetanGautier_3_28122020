@@ -10,12 +10,14 @@
   <body>
     <header>
       <!-- <a href="index.html"> -->
-      <button class="header__icon" onclick="location.href='./index.html'">
+      <div class="header__icon" onclick="location.href='./index.html'">
         <i class="fas fa-arrow-left"></i>
-      </button>
+      </div>
 
     <!-- </a> -->
-      <div class="header__logo header__logo--menu">
+      <div class="header__logo">
+        <!-- <div class="header__logo header__logo--menu"> -->
+
         <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
       </div>
     </header>
@@ -30,21 +32,30 @@
           <section class="section-menu">
             <h2>entrées</h2>
             <div class="underline"></div>
-            <div class="container-column">
+            <div class="container-column padding-15">
               <div class="card-menu-detail">
-                <div class="card-menu-detail__titre">Fricassée d'escargot</div>
-                <div class="card-menu-detail__detail">
-                  <div>Au piment d'espelette</div>
-                  <div class="card-menu-detail__prix">25€</div>
+                <div class="container-column padding-15 flex1">
+                  <div class="card-menu-detail__titre">Fricassée d'escargot</div>
+                  <div class="card-menu-detail__detail">
+                    <div>Au piment d'espelette</div>
+                    <div class="card-menu-detail__prix">25€</div>
+                  </div>
                 </div>
+                <div class="card-menu-detail__right">
+                  <div>A</div>
+                </div>
+                
               </div>
               <div class="card-menu-detail">
-                <div class="card-menu-detail__titre">Foie gras de canard mi-cuit</div>
-                <div class="card-menu-detail__detail">
-                  <div>Et ses copeaux de truffe noire</div>
-                  <div class="card-menu-detail__prix">35€</div>
-                </div>
+                <div class="container-column padding-15 flex1">
+                  <div class="card-menu-detail__titre">Foie gras de canard mi-cuit</div>
+                  <div class="card-menu-detail__detail">
+                    <div>Et ses copeaux de truffe noire</div>
+                    <div class="card-menu-detail__prix">35€</div>
+                  </div>
               </div>
+                </div>
+                
               <div class="card-menu-detail">
                 <div class="card-menu-detail__titre">Oeuf au plat</div>
                 <div class="card-menu-detail__detail">

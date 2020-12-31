@@ -1,6 +1,14 @@
 .container-column {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    justify-content: space-evenly;
+}
+
+.padding-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.flex1 {
+    flex: 1;
 }
