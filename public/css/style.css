@@ -272,6 +272,7 @@ footer {
   justify-content: flex-start;
 }
 footer .footer-logo__img {
+  width: 100%;
   filter: invert(100%);
   transform-origin: left;
   transform: scale(0.3);
@@ -290,6 +291,11 @@ footer .footer-details__container {
 
 .footer-text {
   margin-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@ footer {
     justify-content: flex-start;
     & .footer-logo {
         &__img {
+            width: 100%;
             filter: invert(100%);
             transform-origin: left;
             transform: scale(0.3);
