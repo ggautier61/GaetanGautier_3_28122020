@@ -16,6 +16,9 @@
   border: none;
   background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
 }
+.btn--degrade:hover {
+  cursor: pointer;
+}
 .btn--new {
   background-color: #99E2D0;
   color: #32b091;
@@ -28,6 +31,12 @@
   line-height: 30px;
   font-size: 0.9em;
   border-radius: 3px;
+}
+
+.btn-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .container-column {
@@ -158,14 +167,37 @@
 }
 .card-menu-detail__detail {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   font-size: 0.9em;
 }
 .card-menu-detail__right {
   background-color: #99E2D0;
-  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  opacity: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+.card-menu-detail__right i {
+  color: white;
+  transition: transform 0.5s 0.2s;
+}
+.card-menu-detail:hover {
+  cursor: pointer;
+}
+.card-menu-detail:hover .card-menu-detail__right {
+  width: 60px;
+  opacity: 1;
+  transform: scaleX(1);
+}
+.card-menu-detail:hover .card-menu-detail__right i {
+  transform: rotate(360deg);
 }
 
 .heart {
@@ -253,6 +285,10 @@ body {
 .main-index #restaurants {
   background-color: #f7f7f7;
   padding: 20px;
+}
+
+.main-menu {
+  background: #f7f7f7;
 }
 
 .section-menu h2 {

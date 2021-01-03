@@ -79,8 +79,6 @@
 .card-menu {
     display:flex;
     flex-direction: column;
-    // position: relative;
-    // top: -40px;
     background: lighten($color: $color-quaternaire, $amount: 5%);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -106,6 +104,7 @@
     justify-content: space-between;
     background-color: white;
     margin-bottom: 20px;
+    
     &__titre {
         font-weight: bold;
         font-size: 1.1em;
@@ -116,13 +115,42 @@
     }
     &__detail {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: space-between;
         font-size: 0.9em;
     }
     &__right {
         background-color: $color-tertiaire;
-        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 0px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        opacity: 0;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+        & i {
+            color: white;
+            transition: transform 0.5s 0.2s;
+        }
     }
+
+    &:hover
+    {
+        cursor: pointer;
+        & .card-menu-detail__right 
+        {
+            width: 60px;
+            opacity: 1;
+            transform: scaleX(1);
+            & i {
+                transform: rotate(360deg);
+            }
+
+        }
+    }     
+    
 }
+
