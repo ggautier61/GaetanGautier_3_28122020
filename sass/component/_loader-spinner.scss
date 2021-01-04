@@ -1,9 +1,12 @@
 .loader-spinner {
-    background: transparent;
+    // background: transparent;
+    // background: $color-tertiaire;
     // display: inline-block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    left: 200px;
+    //  calc(595px/2 - 37px);
+    width: 100px;
+    height: 100px;
     z-index: 1;
     // cursor: wait;
     // opacity: 0;

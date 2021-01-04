@@ -1,18 +1,33 @@
 .heart {
     position: absolute;
-    right: 20px;
-    top: 15px;
-    transform: scale(1.5);
-    // color: white;
-    // border: 1px solid;
+    right: 45px;
+    top: 20px;
+    z-index: 1;
+    background: white;
+    
 
-    &:active {
-        // color: $color-primary;
-        color: $color-primary;
-        // background-color: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
-        
-    }
     &--modified {
-        color: $color-primary;
+        position: absolute;
+        right: 45px;
+        top: 20px;
+        color:  $color-primary;
+        // @include color-degrade;
+        // color: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
+    }
+}
+
+.heart-anim {
+    &:hover {
+        animation: color-heart 3000ms 100ms forwards;
+    }
+}
+
+@keyframes color-heart {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

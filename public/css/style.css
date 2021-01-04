@@ -7,10 +7,10 @@
   src: url("font/Roboto-Regular.ttf");
 }
 .loader-spinner {
-  background: transparent;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  left: 200px;
+  width: 100px;
+  height: 100px;
   z-index: 1;
   animation: load-spinner 0ms 3000ms both;
 }
@@ -262,7 +262,6 @@
   padding-right: 45px;
   padding-top: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
 }
 
@@ -320,17 +319,30 @@
 
 .heart {
   position: absolute;
-  right: 20px;
-  top: 15px;
-  transform: scale(1.5);
-}
-.heart:active {
-  color: #9356DC;
+  right: 45px;
+  top: 20px;
+  z-index: 1;
+  background: white;
 }
 .heart--modified {
+  position: absolute;
+  right: 45px;
+  top: 20px;
   color: #9356DC;
 }
 
+.heart-anim:hover {
+  animation: color-heart 3000ms 100ms forwards;
+}
+
+@keyframes color-heart {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .photo {
   width: 100%;
 }
