@@ -57,6 +57,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        & i {
+            font-size: 1.7em;
+            right: 20px;
+        }
         
     }
     &__new {

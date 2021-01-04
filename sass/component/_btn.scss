@@ -7,9 +7,12 @@
         padding-right: 15px;
         color: white;
         border: none;
+        box-shadow: 0px 3px 10px darken($color-quaternaire, 30%);
         background: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
         &:hover {
             cursor: pointer;
+            background: linear-gradient(to bottom right,lighten($color-secondary,10%) 0%, lighten($color-primary, 10%) 100%);
+            box-shadow: 0px 3px 10px darken($color-quaternaire, 70%);
         }
     }
 
