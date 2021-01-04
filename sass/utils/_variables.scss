@@ -4,5 +4,5 @@ $color-tertiaire: #99E2D0;
 $color-quaternaire: #EAEAEA;
 
 $loader-spinner-dur: 3000ms;
-$loader-spinner-delay: 100ms;
-$main-container-delay: $loader-spinner-dur + $loader-spinner-delay;
+$loader-spinner-delay: 0ms;
+$main-container-dur: $loader-spinner-dur + $loader-spinner-delay;

@@ -15,15 +15,21 @@
 
 .main-container {
     background-color: white;
-    animation: main-container 0ms $main-container-delay both;
+    animation: main-container $main-container-dur both;
 }
 
 @keyframes main-container {
     0% {
-        transform: translateX(-9999px);
+        filter: blur(4px);
+    }
+
+    80% {
+        filter: blur(4px);
     }
 
     100% {
-        transform: translateX(0);
+        filter: blur(0);
     }
+
+    
 }

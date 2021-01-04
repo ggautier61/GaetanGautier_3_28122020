@@ -7,14 +7,17 @@
   src: url("font/Roboto-Regular.ttf");
 }
 .loader-spinner {
+  background: transparent;
   position: fixed;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  animation: load-spinner 0ms 3000ms both;
 }
 
 .loader-spinner div {
   transform-origin: 40px 40px;
-  animation: load-spinner 1.2s infinite;
+  animation: loader-spinner 1.2s infinite both;
 }
 
 .loader-spinner div:after {
@@ -89,9 +92,17 @@
   animation-delay: 0s;
 }
 
-@keyframes load-spinner {
+@keyframes loader-spinner {
   0% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes load-spinner {
+  90% {
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
@@ -147,15 +158,18 @@
 
 .main-container {
   background-color: white;
-  animation: main-container 0ms 3100ms both;
+  animation: main-container 3000ms both;
 }
 
 @keyframes main-container {
   0% {
-    transform: translateX(-9999px);
+    filter: blur(4px);
+  }
+  80% {
+    filter: blur(4px);
   }
   100% {
-    transform: translateX(0);
+    filter: blur(0);
   }
 }
 .card-fonction {
