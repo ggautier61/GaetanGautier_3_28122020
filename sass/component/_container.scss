@@ -12,3 +12,18 @@
 .flex1 {
     flex: 1;
 }
+
+.main-container {
+    background-color: white;
+    animation: main-container 0ms $main-container-delay both;
+}
+
+@keyframes main-container {
+    0% {
+        transform: translateX(-9999px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,15 +1,20 @@
 .loader-spinner {
-    color: $color-primary;
-    display: inline-block;
-    position: relative;
+    // background: $color-tertiaire;
+    // display: inline-block;
+    position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    // z-index: 1;
+    // cursor: wait;
+    // opacity: 0;
+    // animation: loader-spinner 5000ms 100ms both;
 }
 
 .loader-spinner div {
     transform-origin: 40px 40px;
-    animation: loader-spinner 1.2s linear infinite;
+    // animation: load-spinner 1.2s linear infinite;
+    animation: load-spinner 1.2s infinite;
+
 }
 
 .loader-spinner div:after {
@@ -84,7 +89,7 @@
     animation-delay: 0s;
   }
 
-  @keyframes loader-spinner {
+  @keyframes load-spinner {
     0% {
       opacity: 1;
     }
@@ -92,3 +97,12 @@
       opacity: 0;
     }
   }
+
+  // @keyframes loader-spinner {
+  //   0% {
+  //       opacity: 1;
+  //   }
+  //   100% {
+  //       display: none;
+  //   }
+  // }

@@ -2,3 +2,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0;
 $color-quaternaire: #EAEAEA;
+
+$loader-spinner-dur: 3000ms;
+$loader-spinner-delay: 100ms;
+$main-container-delay: $loader-spinner-dur + $loader-spinner-delay;
