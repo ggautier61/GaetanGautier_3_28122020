@@ -7,15 +7,202 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Menu La note enchantée</title>
   </head>
+
   <body>
     <header>
-      <i class="fas fa-arrow-left"></i>
-        <div class="header__logo">
-          <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+      <div class="header__icon" onclick="location.href='./index.html'">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="header__logo">
+        <img src="./images/logo/ohmyfood.png" alt="ohmyfood">
+      </div>
+    </header>
+
+    <main class="main-menu">
+      <img class="photo" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+      <div class=card-menu>
+        <div class="card-menu__titre">
+          <div>La note anchantée</div>
+          <i class="heart heart-anim far fa-heart"></i>
+          <i class="heart--modified fas fa-heart"></i>
+
         </div>
-      </header>
-      <main>
-        <img class="photo" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-      </main>
+        <section class="section-menu">
+          <section id="section-entrees">
+            <h2>entrées</h2>
+          <div class="underline"></div>
+
+          <div class="container-column padding-15">
+
+            <div class="card-menu-detail">
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Fricassée d'escargot</div>
+                <div class="card-menu-detail__detail">
+                  <div>Au piment d'espelette</div>
+                  <div class="card-menu-detail__prix">25€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+
+            <div class="card-menu-detail">
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Foie gras de canard mi-cuit</div>
+                <div class="card-menu-detail__detail">
+                  <div>Et ses copeaux de truffe noire</div>
+                  <div class="card-menu-detail__prix">35€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+              
+            <div class="card-menu-detail">
+
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Oeuf au plat</div>
+                <div class="card-menu-detail__detail">
+                  <div>Assaisonné à la truffe sur lit de caviar</div>
+                  <div class="card-menu-detail__prix">20€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+
+          </div>
+          </section>
+          
+          <section id="section-plats">
+            <h2>plats</h2>
+          <div class="underline"></div>
+
+          <div class="container-column padding-15">
+
+            <div class="card-menu-detail">
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Filet de boeuf aux herbes</div>
+                <div class="card-menu-detail__detail">
+                  <div>Accompagné de sa ribambelle de légumes</div>
+                  <div class="card-menu-detail__prix">40€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+
+            <div class="card-menu-detail">
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Parmentier de queue de boeuf</div>
+                <div class="card-menu-detail__detail">
+                  <div>À la truffe noire sur sa purée de panais</div>
+                  <div class="card-menu-detail__prix">35€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+
+            <div class="card-menu-detail">
+              <div class="container-column padding-15 flex1">
+                <div class="card-menu-detail__titre">Filet de turbot</div>
+                <div class="card-menu-detail__detail">
+                  <div>Aux agrumes</div>
+                  <div class="card-menu-detail__prix">44€</div>
+                </div>
+              </div>
+              <div class="card-menu-detail__right">
+                <i class="fas fa-check-circle"></i>
+              </div>
+            </div>
+          </div>
+          </section>
+
+          <section id="section-desserts">
+            <h2>desserts</h2>
+            <div class="underline"></div>
+
+            <div class="container-column padding-15">
+
+              <div class="card-menu-detail">
+                <div class="container-column padding-15 flex1">
+                  <div class="card-menu-detail__titre">Paris-Brest</div>
+                  <div class="card-menu-detail__detail">
+                    <div>Revisité</div>
+                    <div class="card-menu-detail__prix">18€</div>
+                  </div>
+                </div>
+                <div class="card-menu-detail__right">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+
+              <div class="card-menu-detail">
+                <div class="container-column padding-15 flex1">
+                  <div class="card-menu-detail__titre">Macaron au chocolat d'exception</div>
+                  <div class="card-menu-detail__detail">
+                    <div>Et glace à la vanille de Madagascar</div>
+                    <div class="card-menu-detail__prix">22€</div>
+                  </div>
+                </div>
+                <div class="card-menu-detail__right">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+
+              <div class="card-menu-detail">
+                <div class="container-column padding-15 flex1">
+                  <div class="card-menu-detail__titre">Mousse au chocolat</div>
+                  <div class="card-menu-detail__detail">
+                    <div class="card-menu-detail__detail-">Au piment d'Espelette et à la truffe noire</div>
+                    <div class="card-menu-detail__prix">23€</div>
+                  </div>
+                </div>
+                <div class="card-menu-detail__right">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+
+          
+          <div class="btn-container">
+            <button class="btn--degrade">Commander</button>
+          </div>
+          
+      </section>
+      </div>
+
+      
+    </main>
+
+    <footer>
+      <div class="footer-logo"><img class="footer-logo__img" src="images/logo/ohmyfood.png" alt="ohmyfood"></div>
+
+      <div class="footer-details">
+        <div class="footer-details__container">
+          <i class="footer-details__icon fas fa-utensils"></i>
+          <div class="footer-text">Proposez un restaurant</div>
+        </div>
+        <div class="footer-details__container">
+          <i class="footer-details__icon fas fa-hands-helping"></i>
+          <div class="footer-text">Devenir partenaire</div>
+        </div>
+        <div class="footer-details__container">
+          Mentions légales
+        </div>
+        <div class="footer-details__container">
+          Contact
+        </div>
+      </div>
+    </footer>
   </body>
-</html>
+  </html>
