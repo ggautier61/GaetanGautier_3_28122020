@@ -235,6 +235,7 @@
   justify-content: space-evenly;
 }
 .card-restaurant__details i {
+  background: white;
   font-size: 1.7em;
   right: 20px;
 }
@@ -329,7 +330,7 @@
   right: 45px;
   top: 20px;
   z-index: 1;
-  background: white;
+  background: #f7f7f7;
 }
 .heart--modified {
   position: absolute;
@@ -339,7 +340,7 @@
 }
 
 .heart-anim:hover {
-  animation: color-heart 3000ms 100ms forwards;
+  animation: color-heart 500ms 100ms forwards;
 }
 
 @keyframes color-heart {

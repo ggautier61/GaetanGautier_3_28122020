@@ -3,7 +3,8 @@
     right: 45px;
     top: 20px;
     z-index: 1;
-    background: white;
+    background: lighten($color: $color-quaternaire, $amount: 5%);
+
     
 
     &--modified {
@@ -18,7 +19,7 @@
 
 .heart-anim {
     &:hover {
-        animation: color-heart 3000ms 100ms forwards;
+        animation: color-heart 500ms 100ms forwards;
     }
 }
 
