@@ -8,7 +8,8 @@
 }
 .loader-spinner {
   position: absolute;
-  left: 200px;
+  left: calc(50% - 37px);
+  top: 50%;
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -220,6 +221,9 @@
   object-position: 0px -45px;
   object-fit: cover;
 }
+.card-restaurant__img:hover {
+  cursor: pointer;
+}
 .card-restaurant__details {
   height: 75px;
   background: white;
@@ -235,9 +239,11 @@
   justify-content: space-evenly;
 }
 .card-restaurant__details i {
-  background: white;
   font-size: 1.7em;
   right: 20px;
+}
+.card-restaurant__details i:hover {
+  cursor: pointer;
 }
 .card-restaurant__new {
   background-color: #99E2D0;
@@ -250,9 +256,6 @@
   text-align: center;
   line-height: 30px;
   font-size: 0.9em;
-}
-.card-restaurant:hover {
-  cursor: pointer;
 }
 
 .card-menu {
@@ -271,6 +274,12 @@
   padding-top: 15px;
   display: flex;
   align-items: baseline;
+}
+.card-menu i:hover {
+  cursor: pointer;
+}
+.card-menu i:active {
+  cursor: progress;
 }
 
 .card-menu-detail {
@@ -336,7 +345,10 @@
   position: absolute;
   right: 45px;
   top: 20px;
-  color: #9356DC;
+  background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .heart-anim:hover {

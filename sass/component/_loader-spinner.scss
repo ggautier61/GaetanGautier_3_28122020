@@ -3,8 +3,8 @@
     // background: $color-tertiaire;
     // display: inline-block;
     position: absolute;
-    left: 200px;
-    //  calc(595px/2 - 37px);
+    left: calc(50% - 37px);
+    top: 50%;
     width: 100px;
     height: 100px;
     z-index: 1;

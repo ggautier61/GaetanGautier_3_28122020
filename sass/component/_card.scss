@@ -43,6 +43,9 @@
         border-top-right-radius: 10px;
         object-position: 0px -45px;
         object-fit: cover;
+        &:hover {
+            cursor: pointer;
+        }
     }
     &__details {
         height: 75px;
@@ -58,9 +61,11 @@
         flex-direction: column;
         justify-content: space-evenly;
         & i {
-            background: white;
             font-size: 1.7em;
             right: 20px;
+            &:hover {
+                cursor: pointer;
+            }
         }
         
     }
@@ -76,9 +81,7 @@
         line-height: 30px;
         font-size: 0.9em;
     }
-    &:hover {
-        cursor: pointer;
-    }
+    
 }
 
 .card-menu {
@@ -97,6 +100,13 @@
         display: flex;
         // justify-content: space-between;
         align-items: baseline;
+    }
+    & i:hover {
+        cursor: pointer;
+    }
+    & i:active {
+        // démarrer ici un animation avec functions pour laisser colorer, autre clip pour désactiver
+        cursor: progress;
     }
 }
 
