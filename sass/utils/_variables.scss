@@ -8,3 +8,9 @@ $loader-spinner-delay: 0ms;
 $main-container-dur: $loader-spinner-dur + $loader-spinner-delay;
 
 $show-card-menu-detail-dur: 1000ms;
+
+$breakpoint: (
+    pc-screen : 1260px, // à partir de 
+    tablet-big-screen: 900px, // à partir de 
+    tablet-screen: 480px // à partir de 
+);

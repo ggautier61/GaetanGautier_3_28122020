@@ -11,9 +11,7 @@
         position: absolute;
         right: 45px;
         top: 20px;
-        // color:  $color-primary;
-        // @include color-degrade;
-        background: linear-gradient(to top,$color-secondary 0%, $color-primary 100%);
+        @include color-degrade($color-secondary, $color-primary, to top);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;

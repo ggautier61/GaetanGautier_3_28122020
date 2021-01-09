@@ -2,6 +2,26 @@
     
 }
 
-@mixin color-degrade($color-start: $color-secondary, $color-end: $color-primary) {
-    color: linear-gradient(to bottom right,$color-start 0%, $color-end 100%);
+@mixin color-degrade($color-start: $color-secondary, $color-end: $color-primary, $direction: to bottom right) {
+    background: linear-gradient($direction, $color-start 0%, $color-end 100%);
+}
+
+@mixin pc-screen {
+    @media screen and (min-width: map-get($breakpoint, pc-screen)) {
+        @content;
+    }
+}
+
+@mixin tablet-screen {
+    // @media screen and (min-width: map-get($breakpoint, tablet-screen)) and (max-width: calc(map-get($breakpoint, tablet-screen)-1)) {
+        @media screen and (min-width: map-get($breakpoint, tablet-screen)) and (max-width: calc(map-get($breakpoint, tablet-big-screen) - 1px)) {
+        @content;
+    }
+}
+
+@mixin tablet-big-screen {
+    // @media screen and (min-width: map-get($breakpoint, tablet-screen)) and (max-width: calc(map-get($breakpoint, tablet-screen)-1)) {
+        @media screen and (min-width: map-get($breakpoint, tablet-big-screen)) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+        @content;
+    }
 }

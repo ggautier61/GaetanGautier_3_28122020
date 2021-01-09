@@ -51,6 +51,10 @@
         animation: show-card-menu-detail $show-card-menu-detail-dur 2600ms both;
     }
 
+    @include pc-screen {
+        flex-direction: row;
+    }
+
 
 
 

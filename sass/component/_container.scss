@@ -18,6 +18,26 @@
     animation: main-container $main-container-dur both;
 }
 
+.card-fonction-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    @include tablet-big-screen {
+        flex-direction: row;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+#container-explore-fonct {
+    @include pc-screen {
+        display: flex;
+    }
+}
+
 @keyframes main-container {
     0% {
         filter: blur(4px);

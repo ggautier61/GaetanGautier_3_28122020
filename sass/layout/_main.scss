@@ -19,6 +19,17 @@
         padding-left: 5px;
         padding-right: 5px;
         text-align: center;
+
+        @include pc-screen {
+            height: auto;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         & h1 {
             margin-top: 0px;
             padding-left: 40px;
@@ -35,6 +46,15 @@
         justify-content: space-between;
         height: 440px;
         padding-bottom: 50px;
+        @include pc-screen {
+            width: 100%;
+            margin-left: 70px;
+            margin-right: 70px;
+        }
+        @include tablet-big-screen {
+            height: auto;
+        }
+        
     }
 
     & #restaurants {

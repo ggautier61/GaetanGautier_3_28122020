@@ -8,10 +8,10 @@
         color: white;
         border: none;
         box-shadow: 0px 3px 10px darken($color-quaternaire, 30%);
-        background: linear-gradient(to bottom right,$color-secondary 0%, $color-primary 100%);
+        @include color-degrade($color-secondary, $color-primary, to bottom right);
         &:hover {
             cursor: pointer;
-            background: linear-gradient(to bottom right,lighten($color-secondary,10%) 0%, lighten($color-primary, 10%) 100%);
+            @include color-degrade(lighten($color-secondary,10%), lighten($color-primary, 10%), to bottom right);
             box-shadow: 0px 3px 10px darken($color-quaternaire, 70%);
         }
     }

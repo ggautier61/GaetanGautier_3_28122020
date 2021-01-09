@@ -165,6 +165,28 @@
   animation: main-container 3000ms both;
 }
 
+.card-fonction-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+  .card-fonction-container {
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  #container-explore-fonct {
+    display: flex;
+  }
+}
+
 @keyframes main-container {
   0% {
     filter: blur(4px);
@@ -181,10 +203,18 @@
   background: #f7f7f7;
   border-radius: 20px;
   text-align: center;
-  margin-left: 12.5px;
   display: flex;
+  padding-right: 20px;
   align-items: center;
   box-shadow: 0px 5px 10px #d1d1d1;
+  position: relative;
+  max-width: 550px;
+  width: 100%;
+}
+@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+  .card-fonction {
+    max-width: 260px;
+  }
 }
 .card-fonction__circle {
   height: 25px;
@@ -194,7 +224,7 @@
   background-color: #9356DC;
   line-height: 25px;
   position: absolute;
-  left: 20px;
+  left: -12.5px;
 }
 .card-fonction__icon {
   color: gray;
@@ -208,11 +238,22 @@
   background-color: #e4d5f6;
 }
 
+#view-card-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .card-restaurant {
   width: 100%;
   height: 250px;
   position: relative;
   margin-bottom: 20px;
+  max-width: 380px;
 }
 .card-restaurant__img {
   height: 70%;
@@ -381,14 +422,19 @@ header {
   justify-content: center;
   box-shadow: 0px 5px 5px #d1d1d1;
 }
+@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+  header .header__logo {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  header .header__logo {
+    width: 50%;
+  }
+}
 header .header__logo img {
   width: 100%;
   transform: scale(0.5);
-}
-header .header__icon {
-  align-items: baseline;
-  position: absolute;
-  left: 20px;
 }
 
 body {
@@ -418,6 +464,18 @@ body {
   padding-right: 5px;
   text-align: center;
 }
+@media screen and (min-width: 1260px) {
+  .main-index #explore-restaurants {
+    height: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .main-index #explore-restaurants h1 {
   margin-top: 0px;
   padding-left: 40px;
@@ -431,6 +489,18 @@ body {
   justify-content: space-between;
   height: 440px;
   padding-bottom: 50px;
+}
+@media screen and (min-width: 1260px) {
+  .main-index #fonct {
+    width: 100%;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+  .main-index #fonct {
+    height: auto;
+  }
 }
 .main-index #restaurants {
   background-color: #f7f7f7;
@@ -477,6 +547,11 @@ body {
 }
 .section-menu #section-desserts .card-menu-detail:nth-child(3) {
   animation: show-card-menu-detail 1000ms 2600ms both;
+}
+@media screen and (min-width: 1260px) {
+  .section-menu {
+    flex-direction: row;
+  }
 }
 
 #section-entrees {
@@ -532,6 +607,21 @@ footer .footer-logo__img {
   transform-origin: left;
   transform: scale(0.3);
 }
+@media screen and (min-width: 1260px) {
+  footer .footer-logo__img {
+    width: auto;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+  footer .footer-logo__img {
+    width: auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: calc(map-get($breakpoint, tablet-big-screen) - 1px)) {
+  footer .footer-logo__img {
+    width: auto;
+  }
+}
 footer .footer-details {
   display: flex;
   flex-direction: column;
@@ -542,6 +632,10 @@ footer .footer-details__icon {
 footer .footer-details__container {
   display: flex;
   margin-bottom: 10px;
+}
+footer .footer-details__container a {
+  text-decoration: none;
+  color: white;
 }
 
 .footer-text {
