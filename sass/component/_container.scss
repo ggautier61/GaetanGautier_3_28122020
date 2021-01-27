@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    @include pc-screen {
+        flex-direction: row;
+    }
 }
 
 .padding-15 {

@@ -143,12 +143,18 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .container-column {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media screen and (min-width: 1260px) {
+  .container-column {
+    flex-direction: row;
+  }
 }
 
 .padding-15 {
@@ -173,7 +179,7 @@
   height: 100%;
   width: 100%;
 }
-@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+@media screen and (min-width: 900px) and (max-width: 1259px) {
   .card-fonction-container {
     flex-direction: row;
     padding-left: 20px;
@@ -211,7 +217,7 @@
   max-width: 550px;
   width: 100%;
 }
-@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+@media screen and (min-width: 900px) and (max-width: 1259px) {
   .card-fonction {
     max-width: 260px;
   }
@@ -316,6 +322,12 @@
   display: flex;
   align-items: baseline;
 }
+@media screen and (min-width: 1260px) {
+  .card-menu__titre {
+    justify-content: center;
+    font-size: 2em;
+  }
+}
 .card-menu i:hover {
   cursor: pointer;
 }
@@ -332,6 +344,18 @@
   background-color: white;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1260px) {
+  .card-menu-detail {
+    height: 100px;
+    min-width: 400px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .card-menu-detail {
+    height: 100px;
+    min-width: auto;
+  }
+}
 .card-menu-detail__titre {
   font-weight: bold;
   font-size: 1.1em;
@@ -345,6 +369,17 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   font-size: 0.9em;
+}
+.card-menu-detail__detail .text-overflow {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-menu-detail__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .card-menu-detail__right {
   background-color: #99E2D0;
@@ -387,7 +422,6 @@
   right: 45px;
   top: 20px;
   background: linear-gradient(to top, #FF79DA 0%, #9356DC 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -407,6 +441,18 @@
 .photo {
   width: 100%;
 }
+@media screen and (min-width: 1260px) {
+  .photo {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .photo {
+    height: 400px;
+    object-fit: cover;
+  }
+}
 
 .underline {
   background-color: #99E2D0;
@@ -422,7 +468,7 @@ header {
   justify-content: center;
   box-shadow: 0px 5px 5px #d1d1d1;
 }
-@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+@media screen and (min-width: 900px) and (max-width: 1259px) {
   header .header__logo {
     width: 50%;
   }
@@ -497,7 +543,7 @@ body {
     margin-right: 70px;
   }
 }
-@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+@media screen and (min-width: 900px) and (max-width: 1259px) {
   .main-index #fonct {
     height: auto;
   }
@@ -511,6 +557,12 @@ body {
   background: #f7f7f7;
 }
 
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .section-menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .section-menu h2 {
   text-transform: uppercase;
   font-size: 1.1em;
@@ -521,6 +573,11 @@ body {
 .section-menu .card-menu-detail {
   opacity: 0;
 }
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .section-menu #section-entrees {
+    width: 33%;
+  }
+}
 .section-menu #section-entrees .card-menu-detail:nth-child(1) {
   animation: show-card-menu-detail 1000ms 200ms both;
 }
@@ -529,6 +586,11 @@ body {
 }
 .section-menu #section-entrees .card-menu-detail:nth-child(3) {
   animation: show-card-menu-detail 1000ms 800ms both;
+}
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .section-menu #section-plats {
+    width: 33%;
+  }
 }
 .section-menu #section-plats .card-menu-detail:nth-child(1) {
   animation: show-card-menu-detail 1000ms 1100ms both;
@@ -539,6 +601,11 @@ body {
 .section-menu #section-plats .card-menu-detail:nth-child(3) {
   animation: show-card-menu-detail 1000ms 1700ms both;
 }
+@media screen and (min-width: 900px) and (max-width: 1259px) {
+  .section-menu #section-desserts {
+    width: 33%;
+  }
+}
 .section-menu #section-desserts .card-menu-detail:nth-child(1) {
   animation: show-card-menu-detail 1000ms 2000ms both;
 }
@@ -547,11 +614,6 @@ body {
 }
 .section-menu #section-desserts .card-menu-detail:nth-child(3) {
   animation: show-card-menu-detail 1000ms 2600ms both;
-}
-@media screen and (min-width: 1260px) {
-  .section-menu {
-    flex-direction: row;
-  }
 }
 
 #section-entrees {
@@ -612,12 +674,12 @@ footer .footer-logo__img {
     width: auto;
   }
 }
-@media screen and (min-width: 900px) and (max-width: calc(map-get($breakpoint, pc-screen) - 1px)) {
+@media screen and (min-width: 900px) and (max-width: 1259px) {
   footer .footer-logo__img {
     width: auto;
   }
 }
-@media screen and (min-width: 480px) and (max-width: calc(map-get($breakpoint, tablet-big-screen) - 1px)) {
+@media screen and (min-width: 480px) and (max-width: 899px) {
   footer .footer-logo__img {
     width: auto;
   }

@@ -12,7 +12,6 @@
         right: 45px;
         top: 20px;
         @include color-degrade($color-secondary, $color-primary, to top);
-        background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
     }
