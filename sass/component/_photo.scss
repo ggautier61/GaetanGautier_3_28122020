@@ -1,12 +1,24 @@
 .photo {
     width: 100%;
+    // object-fit: cover;
+    // height: 300px;
+    // @include pc-screen {
+    //     height: 350px;
+    // }
+    // @include tablet-screen {
+    //     height: 250px;
+    // }
+    
+}
+
+.photo-menu {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
     @include pc-screen {
-        object-fit: cover;
         height: 350px;
     }
     @include tablet-screen {
-        object-fit: cover;
         height: 250px;
     }
-    
 }

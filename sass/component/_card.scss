@@ -70,7 +70,7 @@
     }
       
     &__img {
-        height: 70%;
+        height: 90%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         object-position: 0px -45px;
@@ -84,8 +84,8 @@
         background: white;
         position: absolute;
         bottom: 0px;
-        right: 0px;
-        left: 0px;
+        right: -1px;
+        left: -1px;
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         padding-left: 10px;

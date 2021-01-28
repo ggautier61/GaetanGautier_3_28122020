@@ -286,7 +286,7 @@
   }
 }
 .card-restaurant__img {
-  height: 70%;
+  height: 90%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   object-position: 0px -45px;
@@ -300,8 +300,8 @@
   background: white;
   position: absolute;
   bottom: 0px;
-  right: 0px;
-  left: 0px;
+  right: -1px;
+  left: -1px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-left: 10px;
@@ -470,15 +470,19 @@
 .photo {
   width: 100%;
 }
+
+.photo-menu {
+  width: 100%;
+  object-fit: cover;
+  height: 300px;
+}
 @media screen and (min-width: 1024px) {
-  .photo {
-    object-fit: cover;
+  .photo-menu {
     height: 350px;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1023px) {
-  .photo {
-    object-fit: cover;
+  .photo-menu {
     height: 250px;
   }
 }
