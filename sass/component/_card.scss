@@ -156,7 +156,8 @@
     margin-bottom: 20px;
     @include pc-screen {
         height: 100px;
-        min-width: 400px;
+        min-width: 310px;
+        flex: 0.3;
     }
     @include tablet-screen {
         height: 100px;
@@ -175,14 +176,11 @@
         display: flex;
         justify-content: space-between;
         font-size: 0.9em;
-        & .text-overflow {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
+        
     }
     &__left {
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: column;
         justify-content: space-evenly;
         width: 100%;
@@ -208,6 +206,10 @@
     &:hover
     {
         cursor: pointer;
+        & .card-menu-detail__left
+        {
+            width: 70%;
+        }
         & .card-menu-detail__right 
         {
             min-width: 60px;
@@ -218,12 +220,12 @@
             }
 
         }
+    }    
+}
 
-        & .card-menu-detail__left
-        {
-            width: auto;
-        }
-    }     
-    
+.text-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 

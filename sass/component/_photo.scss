@@ -1,12 +1,12 @@
 .photo {
     width: 100%;
     @include pc-screen {
-        // height: 500px;
         object-fit: cover;
+        height: 350px;
     }
     @include tablet-screen {
-        // height: 400px;
         object-fit: cover;
+        height: 250px;
     }
     
 }
