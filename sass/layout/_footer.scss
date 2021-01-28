@@ -16,9 +16,9 @@ footer {
             @include pc-screen {
                 width: auto;
             }
-            @include tablet-big-screen {
-                width: auto;
-            }
+            // @include tablet-big-screen {
+            //     width: auto;
+            // }
             @include tablet-screen {
                 width: auto;
             }

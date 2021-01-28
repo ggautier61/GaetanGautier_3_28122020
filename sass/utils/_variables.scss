@@ -10,9 +10,7 @@ $main-container-dur: $loader-spinner-dur + $loader-spinner-delay;
 $show-card-menu-detail-dur: 1000ms;
 
 $breakpoint: (
-    pc-screen-min : 1260px, // à partir de 
-    tablet-big-screen-max: 1259px,
-    tablet-big-screen-min: 900px, // à partir de 
-    tablet-screen-max: 899px,
-    tablet-screen-min: 480px // à partir de 
+    pc-screen-min : 1024px, // à partir de 
+    tablet-screen-max: 1023px,
+    tablet-screen-min: 600px // à partir de 
 );

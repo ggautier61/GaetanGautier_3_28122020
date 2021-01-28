@@ -51,7 +51,7 @@
             margin-left: 70px;
             margin-right: 70px;
         }
-        @include tablet-big-screen {
+        @include tablet-screen {
             height: auto;
         }
         
@@ -60,8 +60,10 @@
     & #restaurants {
         background-color: lighten($color-quaternaire, 5%);
         padding: 20px;
-        
+        display: flex;
+        justify-content: center;
     }
+
 }
 
 .main-menu {

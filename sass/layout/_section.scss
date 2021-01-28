@@ -1,5 +1,5 @@
 .section-menu {
-    @include tablet-big-screen {
+    @include tablet-screen {
         display: flex;
         flex-wrap: wrap;
     }
@@ -16,7 +16,7 @@
         opacity: 0;
     }
     & #section-entrees {
-        @include tablet-big-screen {
+        @include tablet-screen {
             width: 33%;
         }
     }
@@ -35,7 +35,7 @@
     }
 
     & #section-plats {
-        @include tablet-big-screen {
+        @include tablet-screen {
             width: 33%;
         }
     }
@@ -54,7 +54,7 @@
     }
 
     & #section-desserts {
-        @include tablet-big-screen {
+        @include tablet-screen {
             width: 33%;
         }
     }
