@@ -19,7 +19,7 @@
 
 .heart-anim {
     &:hover {
-        animation: color-heart 500ms 100ms forwards;
+        animation: color-heart 500ms 100ms both;
     }
 }
 

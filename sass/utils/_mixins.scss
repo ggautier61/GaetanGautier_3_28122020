@@ -17,10 +17,3 @@
         @content;
     }
 }
-
-// @mixin tablet-big-screen {
-//     // @media screen and (min-width: map-get($breakpoint, tablet-screen)) and (max-width: calc(map-get($breakpoint, tablet-screen)-1)) {
-//         @media screen and (min-width: map-get($breakpoint, tablet-big-screen-min)) and (max-width: map-get($breakpoint, tablet-big-screen-max)) {
-//         @content;
-//     }
-// }

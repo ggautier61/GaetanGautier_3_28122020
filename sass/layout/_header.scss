@@ -1,15 +1,27 @@
 header {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 5px 5px darken-color($color-quaternaire, 10%);
     & .header__logo {
-        @include pc-screen{
+        @include pc-screen {
             width: 40%;
         }
         & img {
             width: 100%;
             transform: scale(0.5);
+        }
+    }
+
+    & .header__icon {
+        position: absolute;
+        left: 10px;
+        @include tablet-screen {
+            left: 20px;
+        }
+        @include pc-screen {
+            left: 40px;
         }
     }
 }

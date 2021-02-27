@@ -15,6 +15,7 @@
     & .card-menu-detail {
         opacity: 0;
     }
+    
     & #section-entrees {
         @include tablet-screen {
             width: 33%;
@@ -22,15 +23,12 @@
     }
 
     & #section-entrees .card-menu-detail:nth-child(1) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 200ms both;
     }
     & #section-entrees .card-menu-detail:nth-child(2) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 500ms both;
     }
     & #section-entrees .card-menu-detail:nth-child(3) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 800ms both;
     }
 
@@ -41,15 +39,12 @@
     }
 
     & #section-plats .card-menu-detail:nth-child(1) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 1100ms both;
     }
     & #section-plats .card-menu-detail:nth-child(2) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 1400ms both;
     }
     & #section-plats .card-menu-detail:nth-child(3) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 1700ms both;
     }
 
@@ -60,35 +55,19 @@
     }
 
     & #section-desserts .card-menu-detail:nth-child(1) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 2000ms both;
     }
     & #section-desserts .card-menu-detail:nth-child(2) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 2300ms both;
     }
     & #section-desserts .card-menu-detail:nth-child(3) {
-        // border: 1px solid red;
         animation: show-card-menu-detail $show-card-menu-detail-dur 2600ms both;
     }
-
-    // @include pc-screen {
-    //     flex-direction: row;
-    // }
-
-    
-
-
-
-
 }
 
 #section-entrees {
     opacity: 0;
     animation: show-section 500ms 0ms both;
-    // & h2 {
-    //     animation: show-h2 0ms 0ms both;
-    // }
 }
 
 #section-plats {

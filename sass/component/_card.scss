@@ -11,9 +11,6 @@
     max-width: 538px;
     width: 100%;
     margin: 10px;
-    // @include tablet-screen {
-    //     max-width: 260px;
-    // }
     &__circle {
         height: 25px;
         width: 25px;
@@ -34,8 +31,7 @@
     }
     &:last-child {
         background-color: lighten($color-primary, 30%);
-    }
-    
+    } 
 }
 
 #view-card-restaurants {
@@ -140,7 +136,6 @@
         cursor: pointer;
     }
     & i:active {
-        // démarrer ici un animation avec functions pour laisser colorer, autre clip pour désactiver
         cursor: progress;
     }
 }
@@ -150,7 +145,6 @@
     box-shadow: 0px 5px 5px $color-quaternaire;
     border-radius: 10px;
     display: flex;
-    // flex-direction: column;
     justify-content: space-between;
     background-color: white;
     margin-bottom: 20px;
@@ -176,7 +170,6 @@
         display: flex;
         justify-content: space-between;
         font-size: 0.9em;
-        
     }
     &__left {
         display: flex;

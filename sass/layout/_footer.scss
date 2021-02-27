@@ -1,5 +1,4 @@
 
-
 footer {
     padding: 20px;
     background: darken($color-quaternaire, 70%);
@@ -16,9 +15,6 @@ footer {
             @include pc-screen {
                 width: auto;
             }
-            // @include tablet-big-screen {
-            //     width: auto;
-            // }
             @include tablet-screen {
                 width: auto;
             }
