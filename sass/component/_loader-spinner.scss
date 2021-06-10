@@ -30,6 +30,8 @@
     .loader-spinner div:nth-child(#{$i}) {
       $deg: 30deg * ($i - 1);
       $delay: ($i - 12) * 0.1s;
+      // @debug $deg;
+      // @debug $delay;
       transform: rotate($deg);
       animation-delay: $delay;
     }

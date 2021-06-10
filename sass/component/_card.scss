@@ -126,6 +126,7 @@
         padding-right: 45px;
         padding-top: 15px;
         display: flex;
+        // flex-wrap: nowrap;
         align-items: baseline;
         @include pc-screen {
             justify-content: center;
@@ -159,6 +160,8 @@
     }
     
     &__titre {
+        // display: flex;
+        // flex-wrap: nowrap;
         font-weight: bold;
         font-size: 1.1em;        
     }
